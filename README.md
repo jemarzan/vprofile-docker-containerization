@@ -125,46 +125,46 @@ Services start in dependency order via `depends_on`:
 ### Auto Provisioning — Vagrant + Docker
 > VM boots, Docker installs, all 5 images pulled and running automatically.
 
-![Auto Provision](screenshots/1__Auto_Provision.PNG)
+![Auto Provision](screenshots/1. Auto_Provision.PNG)
 
 ---
 
 ### Login Page
 > Accessible at `http://192.168.56.16`
 
-![Login](screenshots/2__Vprofile-login.PNG)
+![Login](screenshots/2. Vprofile-login.PNG)
 
 ---
 
 ### Index / Landing Page
 
-![Index](screenshots/7__Index.PNG)
+![Index](screenshots/7. Index.PNG)
 
 ---
 
 ### Homepage (After Login)
 
-![Homepage](screenshots/3__Vprofile-homepage.PNG)
+![Homepage](screenshots/3. Vprofile-homepage.PNG)
 
 ---
 
 ### All Users — Data from MySQL via Tomcat
 
-![All Users](screenshots/4__All-users.PNG)
+![All Users](screenshots/4. All-users.PNG)
 
 ---
 
 ### Memcache Verification
 > First request pulls from DB and inserts into cache. Subsequent requests serve from Memcached.
 
-![Memcache](screenshots/5__Memcache.PNG)
+![Memcache](screenshots/5. Memcache.PNG)
 
 ---
 
 ### RabbitMQ Verification
 > Confirms RabbitMQ connections, channels, exchanges, and queues are active.
 
-![RabbitMQ](screenshots/6__RabbitMQ.PNG)
+![RabbitMQ](screenshots/6. RabbitMQ.PNG)
 
 ---
 
