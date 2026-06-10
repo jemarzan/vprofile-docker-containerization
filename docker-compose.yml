@@ -1,0 +1,44 @@
+services:
+    vprodb:
+        image: jemdevops/vprofiledb:latest
+        container_name: vprofiledb
+        ports:
+          - "3306:3306"
+        volumes:
+          - vprofiledbdata:/var/lib/mysql
+        environment:
+          - MYSQL_ROOT_PASSWORD=vprodbpass
+    vprocache01:
+        image: memcached
+        container_name: vprofilecache01
+        ports:
+          - "11211:11211"
+    vpromq01:
+        image: rabbitmq
+        container_name: vprofilemq01
+        ports:
+          - "5672:5672"
+        environment:
+          - RABBITMQ_DEFAULT_USER=guest
+          - RABBITMQ_DEFAULT_PASS=guest
+    vproapp:
+        image: jemdevops/vprofileapp:latest
+        container_name: vprofileapp
+        depends_on:
+          - vprodb
+          - vprocache01
+          - vpromq01
+        ports:
+          - "8080:8080"
+        volumes:
+          - vprofileappdata:/usr/local/tomcat/webapps
+    vproweb:
+        image: jemdevops/vprofileweb:latest
+        container_name: vprofileweb
+        depends_on:
+          - vproapp
+        ports:
+          - "80:80"
+volumes:
+    vprofiledbdata: {}
+    vprofileappdata: {}
