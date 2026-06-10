@@ -125,46 +125,74 @@ Services start in dependency order via `depends_on`:
 ### Auto Provisioning — Vagrant + Docker
 > VM boots, Docker installs, all 5 images pulled and running automatically.
 
-![Auto Provision](screenshots/1. Auto_Provision.PNG)
+<<<<<<< HEAD
+![Auto Provision](screenshots/1_Auto_Provision.PNG)
+=======
+![Auto Provision](screenshots/1_Auto_Provision.PNG)
+>>>>>>> 62a32e4 (Rename screenshot files)
 
 ---
 
 ### Login Page
 > Accessible at `http://192.168.56.16`
 
-![Login](screenshots/2. Vprofile-login.PNG)
+<<<<<<< HEAD
+![Login](screenshots/2_Vprofile-login.PNG)
+=======
+![Login](screenshots/2_Vprofile-login.PNG)
+>>>>>>> 62a32e4 (Rename screenshot files)
 
 ---
 
 ### Index / Landing Page
 
-![Index](screenshots/7. Index.PNG)
+<<<<<<< HEAD
+![Index](screenshots/7_Index.PNG)
+=======
+![Index](screenshots/7_Index.PNG)
+>>>>>>> 62a32e4 (Rename screenshot files)
 
 ---
 
 ### Homepage (After Login)
 
-![Homepage](screenshots/3. Vprofile-homepage.PNG)
+<<<<<<< HEAD
+![Homepage](screenshots/3_Vprofile-homepage.PNG)
+=======
+![Homepage](screenshots/3_Vprofile-homepage.PNG)
+>>>>>>> 62a32e4 (Rename screenshot files)
 
 ---
 
 ### All Users — Data from MySQL via Tomcat
 
-![All Users](screenshots/4. All-users.PNG)
+<<<<<<< HEAD
+![All Users](screenshots/4_All-users.PNG)
+=======
+![All Users](screenshots/4_All-users.PNG)
+>>>>>>> 62a32e4 (Rename screenshot files)
 
 ---
 
 ### Memcache Verification
 > First request pulls from DB and inserts into cache. Subsequent requests serve from Memcached.
 
-![Memcache](screenshots/5. Memcache.PNG)
+<<<<<<< HEAD
+![Memcache](screenshots/5_Memcache.PNG)
+=======
+![Memcache](screenshots/5_Memcache.PNG)
+>>>>>>> 62a32e4 (Rename screenshot files)
 
 ---
 
 ### RabbitMQ Verification
 > Confirms RabbitMQ connections, channels, exchanges, and queues are active.
 
-![RabbitMQ](screenshots/6. RabbitMQ.PNG)
+<<<<<<< HEAD
+![RabbitMQ](screenshots/6_RabbitMQ.PNG)
+=======
+![RabbitMQ](screenshots/6_RabbitMQ.PNG)
+>>>>>>> 62a32e4 (Rename screenshot files)
 
 ---
 
