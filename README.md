@@ -85,25 +85,6 @@ That's it. Vagrant will:
 
 ---
 
-## 📁 Project Structure
-
-```
-├── Vagrantfile                  # Auto-provisioned VM config
-├── docker-compose.yml           # Full stack definition
-├── Docker-Installation.sh       # Docker install script (used by Vagrant)
-└── Docker-files/
-    ├── app/
-    │   └── Dockerfile           # Multi-stage Maven + Tomcat build
-    ├── db/
-    │   ├── Dockerfile           # MySQL 8 with seed data
-    │   └── db_backup.sql        # Pre-seeded accounts schema
-    └── web/
-        ├── Dockerfile           # Nginx reverse proxy
-        └── nginvproapp.conf     # Upstream proxy config
-```
-
----
-
 ## ⚙️ Docker Compose Services
 
 ```yaml
