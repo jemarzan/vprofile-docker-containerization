@@ -61,7 +61,7 @@ MySQL      Memcached     RabbitMQ
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/vprofile-docker.git
+git clone https://github.com/jemarzan/vprofile-docker-containerization.git
 cd vprofile-docker
 
 # Start and auto-provision the VM
